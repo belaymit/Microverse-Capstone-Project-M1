@@ -259,7 +259,7 @@ button {
 }
 
 .headline .hero-header-title h3 {
-  font-size: 1.6rem;
+  font-size: 2.1rem;
   font-weight: 400;
   color: var(--color-orange);
   margin-top: 140px;
@@ -286,7 +286,7 @@ button {
   font-style: normal;
   font-family: var(--ff-primary);
   font-weight: 400;
-  font-size: 14px;
+  font-size: 16px;
   color: #222;
 }
 
@@ -304,6 +304,7 @@ button {
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
+  margin-bottom: 24px;
 }
 
 .headline .hero-bottom .email {
@@ -340,6 +341,7 @@ button {
   font-family: var(--ff-primary);
   border: 0.3px dotted #c6cbcf;
   margin: 24px;
+  padding: 12px;
 }
 
 .main-container .main-top .conference-logo {
@@ -397,8 +399,8 @@ button {
 
 .main-container .main-bottom .past-submit-container .past-submit {
   position: relative;
-  width: 85vw;
-  height: auto;
+  width: 70vw;
+  height: 40vh;
   margin-top: 12px;
   background-image: url("../assets/Images/conference-image.PNG");
   background-size: contain;
@@ -512,9 +514,9 @@ button {
 /* FOOTER SECTION */
 
 .footer {
-  background: #fff;
-  color: var(--clr-black);
   height: auto;
+  background: #fff;
+  color: var(--color-black);
   padding: 64px 0;
 }
 
@@ -528,10 +530,6 @@ button {
 /* MEDIUM SCREEN-TABLET */
 
 @media (min-width: 480px) {
-  .headline-container .headline {
-    padding: 12px 32px 24px 32px;
-  }
-
   .footer-container {
     margin: auto 42px;
   }
@@ -611,9 +609,14 @@ button {
     display: block;
   }
 
+  .footer {
+    background: var(--color-black);
+    color: var(--text-color);
+  }
+
   .footer-container .footer-logo img {
     font-size: 18px;
-    width: 160px;
+    width: 220px;
   }
 
   .main-container .main-top .conference-logo img {
@@ -647,19 +650,33 @@ button {
   }
 
   .headline-container .headline {
-    padding: 12px 120px 24px 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   .headline .hero-title h1 {
     font-size: 60px;
   }
 
-  .headline .hero-desc {
-    margin-right: 100px;
-  }
-
   .main-container .partner-section {
     display: none;
+  }
+
+  .main-container .main-bottom .past-submit-container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 24px;
+    margin: 120px;
+  }
+
+  .main-container .main-bottom .past-submit-container .past-submit {
+    display: flex;
+    position: relative;
+    width: 30vw;
+    height: 50vh;
   }
 
   .footer-container {
@@ -678,6 +695,10 @@ button {
     margin: 0 120px;
   }
 
+  .headline-container .headline {
+    padding: 0 120px;
+  }
+
   .headline .hero-desc {
     margin: 24px;
   }
@@ -687,10 +708,6 @@ button {
     font-size: 16px;
   }
 
-  /* .main-container .main-top .conference-title-desc p {
-    margin: 64px;
-  } */
-
   .featured-speakers {
     width: 100%;
   }
@@ -699,20 +716,6 @@ button {
     width: 600px;
     height: 200px;
     border-radius: 8px;
-  }
-
-  .main-container .main-bottom .past-submit-container {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    gap: 24px;
-    margin: 120px;
-  }
-
-  .main-container .main-bottom .past-submit-container .past-submit {
-    position: relative;
-    width: 40vw;
-    height: 50vh;
   }
 
   .featured-speakers-item::before {
