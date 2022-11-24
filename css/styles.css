@@ -141,7 +141,7 @@ button {
   text-transform: capitalize;
   letter-spacing: 0.1rem;
   display: block;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 3rem;
   transition: all 0.5s ease-in-out;
 }
 
@@ -164,14 +164,14 @@ button {
 }
 
 .header nav .nav-center .nav-header .nav-toggle {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   color: #255374;
   background: transparent;
   outline: none;
   border-color: transparent;
   transition: all 0.3s linear;
   cursor: pointer;
-  margin: 24px;
+  margin-top: 12px;
 }
 
 .header nav .nav-center .links {
@@ -212,9 +212,9 @@ button {
   position: absolute;
   z-index: 100;
   color: #fff;
-  right: 0;
+  right: 10px;
   top: 0;
-  font-size: 24px;
+  font-size: 32px;
   margin: 24px;
   display: none;
 }
@@ -254,7 +254,7 @@ button {
   width: 100%;
   padding: 0 24px 64px 24px;
   background: transparent;
-  margin: 120px auto 42px auto;
+  margin: 30px auto 42px auto;
 }
 
 .headline .hero-header-title {
@@ -290,8 +290,8 @@ button {
 
 .headline .hero-desc p {
   font-style: normal;
-  font-size: 16px;
   color: #222;
+  font-size: 18px;
 }
 
 .headline .hero-text-date {
@@ -304,8 +304,8 @@ button {
 }
 
 .headline .hero-text-date h2 {
+  font-weight: 700;
   font-size: 24px;
-  font-weight: 600;
 }
 
 /* MAIN PROGRAM SECTION */
@@ -409,7 +409,7 @@ button {
 }
 
 .section-center {
-  margin-top: 120px;
+  margin-top: 70px;
   display: grid;
   gap: 2rem 2rem;
   justify-items: center;
@@ -718,18 +718,6 @@ button {
     padding: 12px 32px 24px 32px;
   }
 
-  .main-container .main-program .card-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 3px;
-    margin: 12px;
-  }
-
-  .card-container .card .card-body {
-    display: flex;
-    flex-direction: column;
-  }
-
   .footer-container {
     margin: auto 42px;
   }
@@ -838,7 +826,7 @@ button {
   }
 
   .headline-container .headline {
-    padding: 12px 120px 24px 120px;
+    padding: 60px 120px 24px 120px;
   }
 
   .headline .hero-title h1 {
@@ -847,7 +835,7 @@ button {
 
   .main-container .main-program .card-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     margin: 8px 8px;
   }
 
@@ -858,7 +846,7 @@ button {
   .main-container .main-program .card-container .card {
     flex-direction: column;
     margin: 4px;
-    padding: 12px;
+    gap: 4px;
     background: #5c5d5f;
     align-items: center;
     transition: all 0.5s ease-in-out;
@@ -890,8 +878,8 @@ button {
   .featured-speakers-item::before {
     content: "";
     position: absolute;
-    top: -5px;
-    left: 5px;
+    top: 43px;
+    left: 15px;
     height: 90px;
     width: 80px;
   }
@@ -900,6 +888,12 @@ button {
     object-fit: contain;
     width: 100%;
     height: 100%;
+  }
+
+  .section-center {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .section-center .featured-speakers-item:nth-child(3) ~ .featured-speakers-item {
@@ -927,7 +921,7 @@ button {
   }
 
   .headline-container .headline {
-    padding: 12px 220px 24px 220px;
+    padding: 60px 220px 24px 220px;
   }
 
   .headline .hero-title h1 {
@@ -957,8 +951,8 @@ button {
   .featured-speakers-item::before {
     content: "";
     position: absolute;
-    top: -3px;
-    left: 0;
+    top: 7px;
+    left: 13px;
     height: 90px;
     width: 80px;
   }
